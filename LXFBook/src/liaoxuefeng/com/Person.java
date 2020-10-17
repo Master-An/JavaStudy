@@ -1,8 +1,13 @@
 package liaoxuefeng.com;
 
 public class Person {
-    private String name;
-    private int birth;
+    public String name;
+    public int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
@@ -12,19 +17,11 @@ public class Person {
         this.name = name;
     }
 
-    public int getBirth() {
-        return birth;
-    }
-
-    public void setBirth(int birth) {
-        this.birth = birth;
-    }
-
     public int getAge() {
-        return calcAge(2019);
+        return age;
     }
 
-    private int calcAge(int currenyYear) {
-        return currenyYear - this.birth;
+    public void setAge(int age) {
+        this.age = age;
     }
 }
