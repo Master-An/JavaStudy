@@ -2,7 +2,7 @@
 ## 黑马Java_2020
 
 ## 廖雪峰Java教程
-- JAVA核心类-StingBuilder
+- 异常处理-捕获异常
 
 
 
