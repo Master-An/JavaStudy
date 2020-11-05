@@ -1,30 +1,25 @@
 package liaoxuefeng.com.StringJoiner;
 
-import java.util.StringJoiner;
+
+//import org.apache.commons.logging.LogFactory;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.logging.Logger;
 
 public class Main {
-
     public static void main(String[] args) {
-        String[] names = {"Bob", "Alice", "Grace"};
 
-        //普通字符串拼接方式
-//        StringBuilder sb = new StringBuilder();
-//        sb.append("Hello ");
-//        for (String name: names) {
-//            sb.append(name).append(", ");
-//        }
-//        System.out.println(sb.length());
-//        sb.delete(sb.length() - 2, sb.length());
-//        sb.append("!");
+        Person[] ps = new Person[] {
+                new Person("Bob", 61),
+                new Person("Alice",88),
+                new Person("Lily",75),
+        };
+        Arrays.sort(ps);
+        System.out.println(Arrays.toString(ps));
 
-        //StringJoiner
-//        StringJoiner sj = new StringJoiner(", ", "Hello ", "!");
-//        for (String name : names) {
-//            sj.add(name);
-//        }
-//        System.out.println(sj.toString());
 
-        Integer n = Integer.valueOf(100);
-        System.out.println(n);
+
     }
 }
